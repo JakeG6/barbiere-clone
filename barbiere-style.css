@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+/*LINKS*/
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: #f4faf8;
+  color: #2f363c;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  /*flex-direction: row;*/
+
+}
+  .home {
+    display: flex;
+    /*justify-content: flex-start;*/
+    flex:1;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    letter-spacing: 6.4px;
+    line-height: 20px;
+    color: #2f363c;
+  }
+  .nav-links {
+    display: flex;
+
+
+  }
+  .nav-links a {
+    padding: 15px;
+    color: #2f363c;
+  }
+  .nav-links a:hover {
+    transition: all .35s;
+    color: blue;
+  }
+  .nav-links a:target {
+    transition: all .35s;
+  }
+
+/* MAIN */
+
+
+
+#main {
+  background-image: url("http://barbiereslc.com/img/BarbSLC-6.jpg");
+  background-size: cover;
+  background-position:center;
+  height: 680px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .main-center {
+    display: flex;
+    flex-direction: column;
+  }
+    .big-logo {
+      margin-bottom: 40px;
+      width: 520px;
+    }
+    .book {
+      color: #2f363c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 30px;
+      background-color: #e6f2ee;
+      width: 300px;
+      height: 30px;
+      margin: 0 auto;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .book:hover {
+      transition: all .35s;
+      color: #f4faf8;
+      background: #2f363c;
+    }
+
+/*DEFINITION*/
+#definition {
+  background: #e9f2ee;
+    margin: 0 auto;
+    /* width: 200px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+  #definition p {
+    margin: 0 auto;
+    font-size: 20px;
+    max-width: 480px;
+    line-height: 1.5;
+  }
+
+/*ABOUT*/
+#about {
+
+  background-color: #f4faf8;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+}
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+  }
+  hr {
+    max-width: 50px;
+    border-color: #3b4650;
+    border-width: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid;
+  }
+  .about-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+  padding-right: 15px;
+  }
+    .address {
+      max-width: 50%;
+          padding: 0 15px;
+      margin-left: 95px;
+    margin-bottom: 40px;
+    }
+    .picture {
+      margin-left: 95px;
+          padding: 0 15px;
+    }
+    #hiring {
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      padding: 10px;
+      color:#333;
+      background-color: #E9F2EE;
+
+    }
+    #hiring p {
+      margin:0;
+      line-height: 20px;
+    }
+
+    /*MENU*/
+    #menu {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: #3b4650;
+      color: rgb(255, 255, 255);
+    }
+      .menu-hr {
+        border-color: rgb(255, 255, 255);
+      }
+      .schedule-window {
+        height: 640px;
+        width: 490px;
+        background-color: red;
+        margin: 0 auto;
+      }
+  /*CONTACT*/
+  #contact {
+    padding:100px 0;
+  }
+  .contact-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact-container h2 {
+    font-size: 30px;
+    margin: 0 auto;
+    color: #3b4650;
+  }
+
+  .item-container {
+    display:flex;
+    flex-wrap: wrap;
+    width: 1170px;;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /*background-color: red;*/
+      width: 180px;
+      color: #3b4650;
+    }
+    .item a {
+      color: inherit;
+    }
+.item .fa {
+  margin-bottom: 15px;
+}
+.item a:hover {
+  cursor: pointer;
+  color:blue;
+  transition: all .35s;
+}
+
+
+/* FOOTER */
+
+  footer {
+    padding: 30px;
+  }
+  footer .copyright {
+    padding-top: 30px;
+    text-align: center;
+    border-top: 1px solid #efefef;
+    color: #aaaaaa;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width:1200px) {
+  .about-container {
+    flex-direction: column;
+  }
+    .address {
+      margin: 0 auto 40px auto;
+    }
+    .picture {
+      padding: 0 15;
+      margin: 0 auto;
+    }
+
+  .item-container {
+    justify-content: space-around;
+    width: 700px;
+  }
+  .item .fa {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width:767px) {
+  .picture {
+    display: none;
+  }
+  .contact-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-container h2 {
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .item-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+    .item .fa {
+      margin-top: 15px;
+    }
+
+
+}
+
+.item a {
+  color: inherit;
+}
